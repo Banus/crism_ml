@@ -1,0 +1,29 @@
+.gitattributes
+
+# temporary results
+*.mat
+*.npz
+*.ipynb
+*.pdf
+*.png
+
+# working directories
+.ipynb_checkpoints
+.cache*
+datasets*
+image*
+legacy
+maps
+workdir*
+workspace*
+
+# Matlab experiments
+matlab
+*.asv
+
+# Python cache
+__pycache__
+*.egg-info/
+
+# project settings
+.vscode
