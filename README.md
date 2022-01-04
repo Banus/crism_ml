@@ -115,10 +115,14 @@ details).
 If you find this repository useful in your research, please cite:
 
 ```bibtex
-@article{Plebani2021crism,
-  title={A Machine Learning Toolkit for {CRISM} Image Analysis},
-  author={Emanuele Plebani and Bethany L. Ehlmann and Ellen K. Leask and Valerie K. Fox and M. Murat Dundar},
-  booktitle={to be submitted to ICARUS},
-  year={2021}
+@article{Plebani2022crism,
+  title = {A machine learning toolkit for {CRISM} image analysis},
+  journal = {Icarus},
+  pages = {114849},
+  year = {2022},
+  issn = {0019-1035},
+  doi = {https://doi.org/10.1016/j.icarus.2021.114849},
+  url = {https://www.sciencedirect.com/science/article/pii/S0019103521004905},
+  author = {Emanuele Plebani and Bethany L. Ehlmann and Ellen K. Leask and Valerie K. Fox and M. Murat Dundar},
 }
 ```
