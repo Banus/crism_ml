@@ -164,7 +164,7 @@ def crop_region(rem):
     """
     yy_, xx_ = np.nonzero(~rem)
 
-    mask = np.full(rem.shape, True, dtype=np.bool)
+    mask = np.full(rem.shape, True, dtype=bool)
     mask[yy_[0]:yy_[-1]+1, xx_[0]:xx_[-1]+1] = False
     if np.any(rem != mask):
         logging.warning("Cropping image but invalid pixels inside the box.")
@@ -376,8 +376,7 @@ def remove_spikes_column(pixspec, size, sigma, copy=True):
 
 def _y_slice(idx, nrows, win):
     if nrows < 2 * win:
-        raise ValueError("Not enough rows: {} found, {} required".format(
-            nrows, 2 * win))
+        raise ValueError(f"Not enough rows: {nrows} found, {2 * win} required")
 
     if idx < win:
         slices = np.r_[0:idx-1, idx+2:2*win-1]

@@ -491,13 +491,13 @@ def _merge_region(regs, kls):
         return [x[field] for x in lst]
 
     sizes = _l(regs, 'size')
-    avg = np.sum(s*x for s, x in zip(sizes, _l(regs, 'avg'))) / np.sum(sizes)
+    avg = sum(s*x for s, x in zip(sizes, _l(regs, 'avg'))) / np.sum(sizes)
 
     res = {'pred': kls, 'coords': np.concatenate(_l(regs, 'coords')),
            'coords_full': np.concatenate(_l(regs, 'coords_full')),
            'size': np.sum(sizes), 'avg': avg}
     if 'avg0' in regs[0]:
-        res.update(avg0=np.sum(
+        res.update(avg0=sum(
             s*x for s, x in zip(sizes, _l(regs, 'avg0'))) / np.sum(sizes))
 
     return res

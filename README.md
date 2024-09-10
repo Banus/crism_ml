@@ -63,8 +63,8 @@ the image and classify the pixels. A set of plots will be saved in the
 ```bash
 # download dataset
 mkdir -p datasets && cd datasets
-curl -O http://cs.iupui.edu/~mdundar/CRISM/CRISM_bland_unratioed.mat
-curl -O http://cs.iupui.edu/~mdundar/CRISM/CRISM_labeled_pixels_ratioed.mat
+curl -LO https://zenodo.org/records/13338091/files/CRISM_bland_unratioed.mat
+curl -LO https://zenodo.org/records/13338091/files/CRISM_labeled_pixels_ratioed.mat
 cd ..
 
 # download image
@@ -79,8 +79,8 @@ available in `tutorials/Training.ipynb`.
 
 ## Dataset
 
-We released two datasets on the
-[CRISM ML toolkit](http://cs.iupui.edu/~mdundar/CRISM.htm) website, to train
+We released two sets of spectra on the
+[CRISM ML dataset](https://zenodo.org/records/13338091) website, to train
 the bland pixel model and the mineral model.
 Download them to the `datasets` directory or pass the path to the`train.py`
 script using the `--datapath` argument.
