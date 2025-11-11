@@ -15,7 +15,7 @@ compositional units in remote sensing data quickly, accurately, and at scale.
 
 Project page: `CRISM ML toolkit`_.
 
-.. _CRISM ML toolkit: http://cs.iupui.edu/~mdundar/CRISM.htm
+.. _CRISM ML toolkit: https://banus.github.io/projects/crism/
 
 .. autosummary::
    :toctree: generate

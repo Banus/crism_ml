@@ -1,5 +1,17 @@
 # CRISM Machine Learning Toolkit
 
+<p align="center">
+    <a href="https://banus.github.io/projects/crism/">
+        <img alt="Project" src="https://img.shields.io/static/v1?label=Project&message=Github&color=blue&logo=github-pages">
+    </a>
+    <a href="https://doi.org/10.1016/j.icarus.2021.114849">
+        <img alt="DOI" src="https://img.shields.io/badge/DOI-10.1016/j.icarus.2021.114849-red">
+    </a>
+    <a href="https://opensource.org/licenses/Apache-2.0">
+        <img alt="License" src="https://img.shields.io/badge/license-Apache%20License%202.0-yellowgreen">
+    </a>
+</p>
+
 ## Introduction
 
 This package demonstrates the utility of machine learning in two important
@@ -79,8 +91,8 @@ available in `tutorials/Training.ipynb`.
 
 ## Dataset
 
-We released two sets of spectra on the
-[CRISM ML dataset](https://zenodo.org/records/13338091) website, to train
+We released two sets of spectra in the
+[CRISM ML dataset](https://zenodo.org/records/13338091), to train
 the bland pixel model and the mineral model.
 Download them to the `datasets` directory or pass the path to the`train.py`
 script using the `--datapath` argument.
@@ -107,7 +119,7 @@ And the mineral dataset has the following structure:
 
 ## License
 
-The code is released under the Apache-2 License (see `LICENSE.txt` for
+The code is released under the Apache-2.0 License (see `LICENSE.txt` for
 details).
 
 ## Citation
